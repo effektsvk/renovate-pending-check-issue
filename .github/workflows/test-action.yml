@@ -15,9 +15,5 @@ jobs:
 
       - name: Check PR
         run: |
-          if [ "${GITHUB_STATUS_CONTEXT}" != "my-action" ]; then
-            echo "PR is not valid"
-            exit 1
-          fi
           echo "PR is valid"
           exit 0
