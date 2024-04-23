@@ -1,0 +1,19 @@
+name: My Action
+
+on:
+  pull_request:
+    types: [opened, synchronized]
+  push:
+    branches: [main]
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Check PR
+        run: |
+          echo "PR is valid"
+          exit 0
