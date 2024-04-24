@@ -1,8 +1,11 @@
 name: Long Running Action
 
 on:
-  pull_request:
-    types: [opened, synchronized]
+  pull_request_target:
+    types:
+      - opened
+      - edited
+      - synchronize
 
 jobs:
   first:
