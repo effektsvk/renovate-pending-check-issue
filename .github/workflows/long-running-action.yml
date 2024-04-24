@@ -3,8 +3,6 @@ name: Long Running Action
 on:
   pull_request:
     types: [opened, synchronized]
-  push:
-    branches: [main]
 
 jobs:
   first:
